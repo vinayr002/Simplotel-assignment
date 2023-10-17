@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;   
+}
+h1{
+    font-size: 2.5rem;
+    color: white;
+    
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 20px;
+    
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+}
+ul{
+    list-style: none;   
+}
+li{
+    font-size: 1rem;    
+}
+
+.txt{
+    margin-top: 10px;
+    font-weight: 500;  
+    padding-inline: 10px; 
+}
+.flex{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.nav-links{
+    padding-block: 10px;
+}
+.nav-links ul{
+    justify-content: center;
+    gap: 50px;   
+    flex-wrap: wrap; 
+}
+.hover-link{
+    transition: 0.2s ease-out;
+}
+.hover-link:hover{
+    color: #1d6983;
+}
+
+.main{
+    height: 600px;
+    background-image: url(img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    width: 50%;
+    position: relative;
+    margin: 0 80px;
+    top: 45%;
+    transform: translateY(-50%);
+    padding: 40px 50px;
+    background-color: rgb(238 115 115 / 55%);
+}
+
+.feature-section{
+    background: linear-gradient(to right, rgb(226 85 160),rgb(246 205 72) );
+    
+}
+.head{
+    padding-block:100px 20px;
+    text-align: center;
+}
+.features-area{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+    margin: 20px;
+    
+}
+.features-card{
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    background-size: 100%;
+    text-align: center;
+    background-color: white;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    
+}
+.features-card img{
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    border-top-right-radius: 80px;
+}
+.features-card h2{
+    padding-block: 10px;
+}
+.features-card p{
+    color: black;
+    text-align: center;
+    width: 80%;
+    font-size: 1rem;
+}
+.container{
+    max-width: 1300px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.order{
+    margin: 0 auto;   
+   
+}
+.button{
+    width: 150px;
+    text-align: center;
+    margin-block: 80px;
+    background-color: rgb(230 209 209 / 69%);
+    border-radius: 20px;
+    font-weight: 700;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.button:hover{
+    background-color: rgba(105, 105, 105, 0.6);
+}
+
+@media screen and (max-width: 992px) {
+    .main{
+        height: 400px;
+    }
+    .nav-links ul{
+        gap: 30px;
+    }
+    .features-area{
+        align-items: center;  
+    }
+    p{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .head{
+        padding-block: 20px;
+    }
+    .content{
+        margin-left: 20px;
+        padding: 20px 30px;
+        width: 60%;
+    }
+}
+@media screen and (max-width: 558px){
+    .content{
+        width: 70%;
+    }
+    .features-card{
+        width: 80%;
+    }
+    .features-card img{
+        width: 80%;
+    }
+}
